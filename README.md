@@ -7,7 +7,6 @@ This extension provides support for:
 * **`.geo` files** — Geometry definitions (CORNERS, PLANES, MARKERS)
 * **`.loc` files** — Source and receiver definitions (SRC.LOC, REC.LOC)
 
----
 
 ## Features
 
@@ -26,7 +25,6 @@ This extension provides support for:
 * Comments (`;`)
 * Bracket matching and auto-closing
 
----
 
 ## Snippets
 
