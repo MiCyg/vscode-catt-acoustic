@@ -1,0 +1,54 @@
+{
+  "name": "catt-geo",
+  "displayName": "CATT Acoustics",
+  "description": "Syntax highlighting and language support for CATT-Acoustic geometry (.geo) and location (.loc) files",
+  "version": "0.1.0",
+  "author": {
+    "name": "CATT Extensions"
+  },
+  "publisher": "catt-extensions",
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cattgeo",
+        "aliases": ["CATT GEO"],
+        "extensions": [".geo", ".geo.bkp"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "cattloc",
+        "aliases": ["CATT LOC"],
+        "extensions": [".loc", ".loc.bkp"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cattgeo",
+        "scopeName": "source.cattgeo",
+        "path": "./syntaxes/geo.tmLanguage.json"
+      },
+      {
+        "language": "cattloc",
+        "scopeName": "source.cattloc",
+        "path": "./syntaxes/loc.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "cattloc",
+        "path": "./snippets/cattloc.snippets.json"
+      },
+      {
+        "language": "cattgeo",
+        "path": "./snippets/cattgeo.snippets.json"
+      }
+    ]
+  }
+}

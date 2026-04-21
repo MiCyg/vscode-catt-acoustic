@@ -1,0 +1,217 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "catt geo",
+	"scopeName": "source.cattgeo",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#transformations"
+		},
+		{
+			"include": "#replication"
+		},
+		{
+			"include": "#materials"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#planes"
+		},
+		{
+			"include": "#corners"
+		},
+		{
+			"include": "#markers"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#identifiers"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.semicolon.cattgeo",
+					"match": ";.*$"
+				}
+			]
+		},
+		"sections": {
+			"patterns": [
+				{
+					"name": "keyword.control.section.cattgeo",
+					"match": "\\b(CORNERS|PLANES|MARKERS)\\b"
+				}
+			]
+		},
+		"transformations": {
+			"patterns": [
+				{
+					"name": "keyword.control.transform.cattgeo",
+					"match": "\\b(OBJECT|ORIGIN|TRANSLATE|SHIFT|ROTATE)\\b"
+				}
+			]
+		},
+		"replication": {
+			"patterns": [
+				{
+					"name": "keyword.control.replication.cattgeo",
+					"match": "\\b(MIRROR|COPY|EXCLUDE|OFFSETCO|OFFSETPL)\\b"
+				}
+			]
+		},
+		"materials": {
+			"patterns": [
+				{
+					"name": "storage.type.material.cattgeo",
+					"match": "\\b(ABS|AUDABS|MAT|MATERIAL)\\b"
+				},
+				{
+					"name": "keyword.control.material-param.cattgeo",
+					"match": "\\b[LR]\\b(?=\\s)"
+				},
+				{
+					"name": "variable.other.assignment.cattgeo",
+					"match": "([A-Za-z_][A-Za-z0-9_]*)\\s*(?=\\=)"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.coordinate.cattgeo",
+					"match": "\\b(lock|cut|x|y|z|loop)\\s*(?=\\()"
+				},
+				{
+					"name": "punctuation.section.parens.cattgeo",
+					"match": "[()]"
+				}
+			]
+		},
+		"planes": {
+			"patterns": [
+				{
+					"name": "meta.plane.cattgeo",
+					"begin": "\\[",
+					"end": "\\]",
+					"patterns": [
+						{
+							"name": "keyword.control.plane-loop.cattgeo",
+							"match": "\\*\\d+"
+						},
+						{
+							"name": "keyword.control.plane-double.cattgeo",
+							"match": "\\bD\\b"
+						},
+						{
+							"name": "constant.numeric.corner-id.cattgeo",
+							"match": "-?\\d+(?=\\s|/|\\]|\\()"
+						},
+						{
+							"name": "variable.other.cattgeo",
+							"match": "[A-Za-z_][A-Za-z0-9_\\-]*"
+						},
+						{
+							"name": "punctuation.separator.cattgeo",
+							"match": "/|\\\\|\\||\\("
+						},
+						{
+							"name": "punctuation.separator.cattgeo",
+							"match": "\\)"
+						}
+					]
+				}
+			]
+		},
+		"corners": {
+			"patterns": [
+				{
+					"name": "meta.corner.cattgeo",
+					"begin": "^(\\d+)\\s+",
+					"end": "$",
+					"beginCaptures": {
+						"1": {
+							"name": "entity.name.tag.corner-id.cattgeo"
+						}
+					},
+					"patterns": [
+						{
+							"name": "constant.numeric.float.coordinate.cattgeo",
+							"match": "-?\\d+\\.\\d+"
+						},
+						{
+							"name": "constant.numeric.integer.coordinate.cattgeo",
+							"match": "-?\\d+(?!\\d)"
+						},
+						{
+							"name": "entity.name.function.coordinate.cattgeo",
+							"match": "\\b(lock|cut|x|y|z|loop)\\s*(?=\\()"
+						},
+						{
+							"name": "punctuation.section.parens.cattgeo",
+							"match": "[()]"
+						},
+						{
+							"name": "variable.other.parameter.cattgeo",
+							"match": "[A-Za-z_][A-Za-z0-9_]*"
+						}
+					]
+				}
+			]
+		},
+		"markers": {
+			"patterns": [
+				{
+					"name": "keyword.control.marker.cattgeo",
+					"match": "\\b(LINE|POLY|CIRC|TEXT|LOAD)\\b"
+				},
+				{
+					"name": "string.quoted.double.cattgeo",
+					"begin": "\"",
+					"end": "\""
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.float.cattgeo",
+					"match": "-?\\d+\\.\\d+"
+				},
+				{
+					"name": "constant.numeric.integer.cattgeo",
+					"match": "-?\\d+"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.cattgeo",
+					"match": "[=+\\-*/<>]|_(?=\\d)"
+				}
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "variable.other.cattgeo",
+					"match": "[A-Za-z_][A-Za-z0-9_\\-]*"
+				}
+			]
+		}
+	}
+}

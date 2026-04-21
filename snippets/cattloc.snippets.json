@@ -1,0 +1,42 @@
+{
+  "SOURCE block": {
+    "prefix": "SOURCE",
+    "body": [
+      "SOURCE ${1:id}",
+      "\tDIRECTIVITY = ${2:\"OMNI\"}",
+      "\tPOS = ${3:0 0 0}",
+      "\tAIMPOS = ${4:0 0 0}",
+      "END"
+    ],
+    "description": "Create a SOURCE block with END"
+  },
+  "SOURCEDEFS block": {
+    "prefix": "SOURCEDEFS",
+    "body": [
+      "SOURCEDEFS",
+      "\tSOURCE ${1:id}",
+      "\t\tDIRECTIVITY = ${2:\"OMNI\"}",
+      "\t\tPOS = ${3:0 0 0}",
+      "\t\tAIMPOS = ${4:0 0 0}",
+      "\tEND",
+      "END"
+    ],
+    "description": "Create a SOURCEDEFS block with multiple SOURCES"
+  },
+  "RECEIVER block": {
+    "prefix": "RECEIVER",
+    "body": [
+      "${1:00} ${2:0.0} ${3:0.0} ${4:0.0}"
+    ],
+    "description": "Create a RECEIVER block"
+  },
+  "Simple SOURCE": {
+    "prefix": "SRC",
+    "body": [
+      "SOURCE ${1:id}",
+      "\t$0",
+      "END"
+    ],
+    "description": "Quick SOURCE...END block"
+  }
+}
