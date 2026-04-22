@@ -37,10 +37,13 @@ The extension includes predefined snippets to speed up writing `.geo` and `.loc`
 | `ABS`     | Define material absorption |
 | `PLANE`   | Create a plane definition  |
 | `CORNER`  | Add a corner point         |
-| `OBJECT`  | Create an object block     |
-| `CORNERS` | Insert CORNERS section     |
-| `PLANES`  | Insert PLANES section      |
-| `MARKERS` | Insert MARKERS section     |
+
+<table>
+  <tr>
+    <td><img src="images/plane.gif" alt="Example view 1"></td>
+    <td><img src="images/corner.gif" alt="Example view 2"></td>
+  </tr>
+</table>
 
 
 ### Locations (`.loc`)
@@ -48,9 +51,15 @@ The extension includes predefined snippets to speed up writing `.geo` and `.loc`
 | Prefix       | Description                |
 | ------------ | -------------------------- |
 | `SOURCE`     | Create SOURCE block        |
-| `SOURCEDEFS` | Create SOURCEDEFS block    |
 | `RECEIVER`   | Add receiver point         |
-| `SRC`        | Minimal SOURCE...END block |
+
+<table>
+  <tr>
+    <td><img src="images/receiver.gif" alt="Example view 1"></td>
+    <td><img src="images/source.gif" alt="Example view 2"></td>
+  </tr>
+</table>
+
 
 
 ## Supported Directives
