@@ -10,7 +10,7 @@
 			"include": "#sections"
 		},
 		{
-			"include": "#transformations"
+			"include": "#directives"
 		},
 		{
 			"include": "#replication"
@@ -57,11 +57,11 @@
 				}
 			]
 		},
-		"transformations": {
+		"directives": {
 			"patterns": [
 				{
 					"name": "keyword.control.transform.cattgeo",
-					"match": "\\b(OBJECT|ORIGIN|TRANSLATE|SHIFT|ROTATE)\\b"
+					"match": "\\b(LOCAL|OBJECT|ORIGIN|TRANSLATE|SHIFT|ROTATE)\\b"
 				}
 			]
 		},

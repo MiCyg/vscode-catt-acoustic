@@ -1,12 +1,29 @@
 {
   "name": "catt-geo",
-  "displayName": "CATT Acoustics",
+  "displayName": "CATT-Acoustic Syntax",
   "description": "Syntax highlighting and language support for CATT-Acoustic geometry (.geo) and location (.loc) files",
-  "version": "0.1.0",
+  "repository": "https://github.com/MiCyg/vscode-catt-acoustic.git",
+  "version": "0.2.0",
   "author": {
     "name": "CATT Extensions"
   },
-  "publisher": "catt-extensions",
+  "icon": "images/icon.png",
+  "keywords": [
+    "catt",
+    "acoustics",
+    "acoustic simulation",
+    "geo",
+    "loc",
+    "ray tracing",
+    "audio",
+    "simulation"
+  ],
+  "homepage": "https://github.com/MiCyg/vscode-catt-acoustic",
+  "bugs": {
+    "url": "https://github.com/MiCyg/vscode-catt-acoustic/issues"
+  },
+  "license": "MIT",
+  "publisher": "MiCyg-VSCode",
   "engines": {
     "vscode": "^1.116.0"
   },

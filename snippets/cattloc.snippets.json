@@ -3,9 +3,10 @@
     "prefix": "SOURCE",
     "body": [
       "SOURCE ${1:id}",
-      "\tDIRECTIVITY = ${2:\"OMNI\"}",
+      "\tDIRECTIVITY = ${2:\"omni\"}",
       "\tPOS = ${3:0 0 0}",
-      "\tAIMPOS = ${4:0 0 0}",
+      "\tAIMANGLES = ${4:0 0}",
+	  "\tLp1m_a = < 94 94 94 94 94 94 : 94 94 >"
       "END"
     ],
     "description": "Create a SOURCE block with END"
