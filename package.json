@@ -1,6 +1,6 @@
 {
   "name": "cat-acoustic",
-  "displayName": "CATT-Acoustic Syntax",
+  "displayName": "CATT-Acoustic Syntax Helper",
   "description": "Syntax highlighting and language support for CATT-Acoustic geometry (.geo) and location (.loc) files",
   "repository": "https://github.com/MiCyg/vscode-catt-acoustic.git",
   "version": "0.4.0",
