@@ -13,6 +13,9 @@
 			"include": "#directives"
 		},
 		{
+			"include": "#transforms"
+		},
+		{
 			"include": "#replication"
 		},
 		{
@@ -58,6 +61,30 @@
 			]
 		},
 		"directives": {
+			"patterns": [
+				{
+					"name": "keyword.control.directive.cattloc",
+					"match": "\\b(LOCAL|GLOBAL|GETLOCAL|GETGLOBAL|SCALE|INCLUDE)\\b"
+				},
+				{
+					"name": "keyword.preprocessor.include.cattloc",
+					"match": "#I\\b"
+				},
+				{
+					"name": "keyword.control.conditional.cattloc",
+					"match": "\\b(IF|THEN|ELSE|ENDIF)\\b"
+				},
+				{
+					"name": "keyword.control.diagnostic.cattloc",
+					"match": "\\b(SAY|DEBUG|RETURN)\\b"
+				},
+				{
+					"name": "keyword.control.info.cattloc",
+					"match": "\\b(INFO|MIN|MAX)\\b"
+				}
+			]
+		},
+		"transforms": {
 			"patterns": [
 				{
 					"name": "keyword.control.transform.cattgeo",

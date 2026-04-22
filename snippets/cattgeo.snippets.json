@@ -2,7 +2,7 @@
   "ABS Material": {
     "prefix": "ABS",
     "body": [
-      "ABS ${1:material_name} = ${2:50} L ${3:0} {${4:200 200 200}}"
+      "ABS ${1:material_name} = <${2:50 50 50 50 50 50}> L <${3:10 10 10 10 10 10}> {${4:200 200 200}}"
     ],
     "description": "Define absorption material with coefficients"
   },
@@ -19,40 +19,5 @@
       "${1:id} ${2:x} ${3:y} ${4:z}"
     ],
     "description": "Create a CORNER point (id x y z)"
-  },
-  "OBJECT block": {
-    "prefix": "OBJECT",
-    "body": [
-      "OBJECT ${1:object_name}",
-      "\t$0"
-    ],
-    "description": "Create an OBJECT block for transformations"
-  },
-  "CORNERS section": {
-    "prefix": "CORNERS",
-    "body": [
-      "CORNERS",
-      "",
-      "${1:; Enter corner points below}"
-    ],
-    "description": "Create a CORNERS section"
-  },
-  "PLANES section": {
-    "prefix": "PLANES",
-    "body": [
-      "PLANES",
-      "",
-      "${1:; Enter plane definitions below}"
-    ],
-    "description": "Create a PLANES section"
-  },
-  "MARKERS section": {
-    "prefix": "MARKERS",
-    "body": [
-      "MARKERS",
-      "",
-      "${1:; Enter marker definitions below}"
-    ],
-    "description": "Create a MARKERS section"
   }
 }
