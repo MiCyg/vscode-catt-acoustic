@@ -2,11 +2,27 @@
 
 Syntax highlighting and language support for **CATT-Acoustic** simulation software.
 
+
+
+
 This extension provides support for:
 
 * **`.geo` files** — Geometry definitions (CORNERS, PLANES, MARKERS)
 * **`.loc` files** — Source and receiver definitions (SRC.LOC, REC.LOC)
 
+<table>
+  <tr>
+    <td><img src="images/example1.png"></td>
+    <td><img src="images/example2.png"></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><img src="images/example3.png"></td>
+    <td><img src="images/example4.png"></td>
+  </tr>
+</table>
 
 ## Features
 
