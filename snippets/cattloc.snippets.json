@@ -5,24 +5,18 @@
       "SOURCE ${1:id}",
       "\tDIRECTIVITY = ${2:\"omni\"}",
       "\tPOS = ${3:0 0 0}",
-      "\tAIMANGLES = ${4:0 0}",
-	  "\tLp1m_a = < 94 94 94 94 94 94 : 94 94 >"
+      "\tAIMPOS = ${4:0 0 0}",
+      "\t; AIMANGLES = 0 0",
+	  "\tLp1m_a = < ${5:94 94 94 94 94 94} >",
+      "\t; Optional:",
+      "\t;MICSENSITIVITY = s",
+      "\t;GAIN = < G125 .. G4k [ : G8k G16k ] >",
+      "\t;DELAY = d",
+      "\t;POLARITYREVERSAL",
+      "\t;OFF",
       "END"
     ],
     "description": "Create a SOURCE block with END"
-  },
-  "SOURCEDEFS block": {
-    "prefix": "SOURCEDEFS",
-    "body": [
-      "SOURCEDEFS",
-      "\tSOURCE ${1:id}",
-      "\t\tDIRECTIVITY = ${2:\"OMNI\"}",
-      "\t\tPOS = ${3:0 0 0}",
-      "\t\tAIMPOS = ${4:0 0 0}",
-      "\tEND",
-      "END"
-    ],
-    "description": "Create a SOURCEDEFS block with multiple SOURCES"
   },
   "RECEIVER block": {
     "prefix": "RECEIVER",
