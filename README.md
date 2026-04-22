@@ -1,4 +1,4 @@
-# CATT-Acoustics - VS Code Extension
+# CATT-Acoustic - VS Code Extension
 
 Syntax highlighting and language support for **CATT-Acoustic** simulation software.
 
